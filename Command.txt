@@ -1,4 +1,8 @@
 -- Linux
-lake build; time lake env lean Perf/Test_Regression.lean
+git clone https://github.com/PratherConid/lean-perf.git
+lake build
+time lake env lean Perf/Test_Regression.lean
 -- Windows
-lake build; Measure-Command {start-process (lake env lean Perf/Test_Regression.lean) -wait}
+git clone https://github.com/PratherConid/lean-perf.git
+lake build
+Measure-Command {start-process (lake env lean Perf/Test_Regression.lean) -wait}
