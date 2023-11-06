@@ -1,8 +1,10 @@
 -- Linux
 git clone https://github.com/PratherConid/lean-perf.git
+cd lean-perf
 lake build
 time lake env lean Perf/Test_Regression.lean
 -- Windows
 git clone https://github.com/PratherConid/lean-perf.git
+cd lean-perf
 lake build
 Measure-Command {start-process (lake env lean Perf/Test_Regression.lean) -wait}
