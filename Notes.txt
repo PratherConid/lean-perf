@@ -1,0 +1,21 @@
+Linux, ``time lake env lean Perf/Test_Regression.lean``
+```
+Auto found proof. Time spent by auto : 137ms
+...
+real    0m33.241s
+user    0m21.840s
+sys     0m0.933s
+```
+
+Linux, Server: 16 Seconds (Stopwatch)
+
+Windows, ``Measure-Command { lake env lean .\Perf\Test_Regression.lean }``
+```
+Inhabitation
+MonomorphizationWierdExample
+...
+TotalSeconds      : 62.8786204
+TotalMilliseconds : 62878.6204
+```
+
+Windows, Server: 287 Seconds (Stopwatch)
